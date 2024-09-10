@@ -1,4 +1,4 @@
-My Todo EThDApp
+#My Todo DApp
 
 My Todo DApp est une application décentralisée (dApp) qui utilise un contrat intelligent Ethereum pour gérer une liste de tâches (Todo List). Cette application permet aux utilisateurs de créer, afficher et marquer des tâches comme complétées, tout en interagissant directement avec la blockchain Ethereum via MetaMask et Web3.js.
 Fonctionnalités
@@ -8,13 +8,13 @@ Fonctionnalités
     Marquer les tâches comme complétées : Cochez une tâche pour la marquer comme complétée.
     Optimisation des performances : Les tâches sont récupérées en un seul appel grâce à une optimisation du contrat intelligent.
 
-Modifications apportées
+#Modifications apportées
 
     Optimisation des appels à la blockchain :
-        Le contrat intelligent a été modifié pour inclure une fonction getAllTasks() permettant de récupérer toutes les tâches en une seule fois. Cela réduit les appels à la blockchain, améliorant ainsi la performance globale de l'application.
+    Le contrat intelligent a été modifié pour inclure une fonction getAllTasks() permettant de récupérer toutes les tâches en une seule fois. Cela réduit les appels à la blockchain, améliorant ainsi la performance globale de l'application.
 
     Amélioration de l'interface utilisateur :
-        Le front-end a été mis à jour pour utiliser la nouvelle méthode getAllTasks(), rendant l'affichage des tâches plus rapide et efficace grâce à un traitement groupé.
+    Le front-end a été mis à jour pour utiliser la nouvelle méthode getAllTasks(), rendant l'affichage des tâches plus rapide et efficace grâce à un traitement groupé.
 
 Prérequis
 
@@ -26,16 +26,16 @@ Avant de commencer, assurez-vous d'avoir installé les outils suivants :
     Ganache (bloc local pour le développement)
     MetaMask (extension de navigateur pour gérer votre compte Ethereum)
 
-Installation
+#Installation
 
-    Clonez ce dépôt sur votre machine locale.
+    Clonez ce dépôt sur votre machine locale :
 
     bash
 
 git clone https://github.com/zerkor/my-todo-dapp.git
 cd my-todo-dapp
 
-Installez les dépendances du projet.
+Installez les dépendances du projet :
 
 bash
 
@@ -51,7 +51,7 @@ bash
 npm install -g truffle
 
 2. Installer Ganache
-Option 1: Ganache CLI
+Option 1 : Ganache CLI
 
 Installez Ganache CLI pour créer une blockchain locale :
 
@@ -65,9 +65,9 @@ bash
 
 ganache
 
-Option 2: Ganache UI
+Option 2 : Ganache UI
 
-Téléchargez et installez Ganache UI. Lancez-le et créez une blockchain locale.
+#Téléchargez et installez Ganache UI. Lancez-le et créez une blockchain locale.
 3. Configurer Truffle
 
 Assurez-vous que votre fichier truffle-config.js est bien configuré pour pointer vers Ganache. Voici un exemple de configuration pour Ganache :
@@ -89,15 +89,15 @@ module.exports = {
   },
 };
 
-Déploiement du Contrat
+#Déploiement du Contrat
 
-    Compilez le contrat intelligent.
+    Compilez le contrat intelligent :
 
     bash
 
 truffle compile
 
-Déployez le contrat sur votre blockchain locale (Ganache).
+Déployez le contrat sur votre blockchain locale (Ganache) :
 
 bash
 
@@ -125,8 +125,4 @@ Structure du Projet
 
     contracts/TodoList.sol : Le contrat intelligent Solidity qui gère les tâches.
     src/app.js : La logique front-end de l'application, qui permet d'interagir avec la blockchain via Web3.js.
-    src/index.html : Le fichier HTML principal de l'application.
-
-Contribuer
-
-Les contributions sont les bienvenues ! Si vous souhaitez améliorer l'application, n'hésitez pas à faire un fork du projet, apporter vos modifications, et soumettre une pull request.
+    src/index.html : Le fichier HTML principal de l'application
